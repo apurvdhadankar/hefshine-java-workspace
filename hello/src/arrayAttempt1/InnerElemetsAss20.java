@@ -1,0 +1,41 @@
+package arrayAttempt1;
+
+public class InnerElemetsAss20 {
+
+	public static void main(String[] args) {
+		int a[][] = {{1,2,3,4},
+					{5,6,7,8},
+					{9,0,1,2},	
+					{3,4,5,6}};
+		int sum=0;
+		int cnt=0;
+		int avg=0;
+	for (int i = 0; i < a.length; i++) 
+	{
+		for (int j = 0; j < a[i].length; j++) 
+		{
+			if(i==0 || j==0 || j==3 || i==3)
+			{
+				System.out.print("");
+			}
+			else
+			{
+				System.out.print(a[i][j]+" ");
+				cnt++;
+				sum += a[i][j];
+			}
+			
+//			avg=sum/cnt;
+		}
+		System.out.println();
+	}
+	avg=sum/cnt;
+	System.out.println("Sum : "+sum);
+	System.out.println("Count : "+cnt);
+	System.out.println("Average : "+avg);
+	}
+}
+
+	
+
+

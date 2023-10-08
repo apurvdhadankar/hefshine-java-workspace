@@ -1,0 +1,46 @@
+package test;
+
+import java.util.Iterator;
+
+public class Q2 {
+	public static void main(String[] args) {
+		int[] a = {5,12,3,6,8,18};
+		int ecnt=0, ocnt=0, pcnt=0;
+		for (int i = 0; i < a.length; i++) 
+		{
+			if(a[i]%2==0)
+			{
+				ecnt++;
+			}
+			else if(a[i]%2!=0)
+			{
+				ocnt++;
+			}
+			
+		}
+//		System.out.println(ecnt);
+//		System.out.println(ocnt);
+		int[] evenarr = new int[ecnt];
+		int[] oddarr = new int[ocnt];
+		
+		ecnt=0; ocnt=0;
+		for (int i = 0; i < a.length; i++) 
+		{
+			if(a[i]%2==0)
+				evenarr[ecnt++]=a[i];
+//			oddarr[ocnt++]=a[i];
+		}
+		
+		
+		for (int i = 0; i < evenarr.length; i++) {
+			System.out.print(evenarr[i]+" ");
+		}
+		System.out.println();
+		for (int i = 0; i < oddarr.length; i++) {
+			System.out.print(oddarr[i]);
+		}
+		
+		
+	}
+
+}

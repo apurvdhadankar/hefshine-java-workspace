@@ -1,0 +1,55 @@
+package pree;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class SortStundent {
+
+	public static void main(String[] args) {
+		ArrayList<Student> al = new ArrayList<>();
+		
+//		Student s1 = new Student("ad", 400);
+//		Student s2 = new Student("kk", 50);
+//		Student s3 = new Student("mk", 60);
+//		Student s4 = new Student("st", 90);
+//		Student s5 = new Student("aj", 100);
+		
+		al.add(new Student("ad", 400));
+		al.add(new Student("kk", 50));
+		al.add(new Student("mk", 60));
+		al.add(new Student("st", 100));
+		al.add(new Student("aj", 100));
+//		al.add(s1);
+//		al.add(s2);
+//		al.add(s3);
+//		al.add(s4);
+//		al.add(s5);
+		
+		for (int i = 0; i < al.size(); i++) 
+		{
+			for (int j = i+1; j < al.size(); j++) 
+			{
+				if(al.get(i).marks > al.get(j).marks)
+				{
+					Student temp = al.get(i);
+					al.set(i, al.get(j));
+					al.set(j, temp);
+					
+					
+					
+				}
+				if(al.get(i).marks == al.get(j).marks)
+				{
+					if(al.get(i).name.compareToIgnoreCase(al.get(j).name)!=0)
+					{
+						Student temp = al.get(i);
+						al.set(i, al.get(j));
+						al.set(j, temp);
+					}
+				}
+			}
+		}
+		System.out.println(al);
+		
+	}
+}

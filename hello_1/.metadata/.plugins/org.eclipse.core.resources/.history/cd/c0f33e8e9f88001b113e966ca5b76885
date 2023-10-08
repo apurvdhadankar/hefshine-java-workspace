@@ -1,0 +1,25 @@
+package test;
+
+import java.util.Iterator;
+
+public class Prime {
+
+	public static void main(String[] args) {
+		int[] a = {5,12,3,6,8,18};
+		for (int i = 0; i < a.length; i++) 
+		{
+			for (int j = 2; j < a.length; j++) {
+				if(a[i]%j==0)
+				{
+					System.out.println(a[i]);
+					break;
+				}
+				
+				
+			}
+			
+		}
+
+	}
+
+}

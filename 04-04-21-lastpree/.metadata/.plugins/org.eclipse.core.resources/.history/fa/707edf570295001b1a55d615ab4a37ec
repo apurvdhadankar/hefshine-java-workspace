@@ -1,0 +1,32 @@
+package pree;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class SortStundent {
+
+	public static void main(String[] args) {
+		ArrayList<Student> al = new ArrayList<>();
+		
+		al.add(new Student("ad", 400));
+		al.add(new Student("kk", 50));
+		al.add(new Student("mk", 60));
+		al.add(new Student("st", 90));
+		al.add(new Student("aj", 100));
+		
+		for(Student s : al)
+		{
+			if(s.marks > s.marks)
+			{
+				int temp = s.marks;
+				s.marks = s.marks;
+				s.marks = temp;
+			}
+		}
+		
+		System.out.println(al);
+		
+	}
+	
+	
+}

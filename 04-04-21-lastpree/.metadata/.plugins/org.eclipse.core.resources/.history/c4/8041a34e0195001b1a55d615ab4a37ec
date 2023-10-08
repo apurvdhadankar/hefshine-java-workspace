@@ -1,0 +1,19 @@
+package pree;
+
+import java.util.ArrayList;
+
+public class SortStundent {
+
+	public static void main(String[] args) {
+		ArrayList<Student> al = new ArrayList<>();
+		
+		al.add(new Student("ad", 40));
+		al.add(new Student("kk", 50));
+		al.add(new Student("mk", 60));
+		al.add(new Student("st", 90));
+		al.add(new Student("aj", 100));
+		
+		
+	}
+
+}

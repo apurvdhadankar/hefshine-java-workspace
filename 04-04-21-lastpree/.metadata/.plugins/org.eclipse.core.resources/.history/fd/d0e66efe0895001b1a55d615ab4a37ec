@@ -1,0 +1,18 @@
+package pree;
+
+public class Q5_HarshadNo {
+
+	public static void main(String[] args) {
+		int h = 140;
+		int temp = h;
+		while(temp!=0)
+		{
+			temp = temp%10;
+			System.out.println(temp);
+			break;
+			
+		}
+
+	}
+
+}

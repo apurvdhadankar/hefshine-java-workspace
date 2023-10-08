@@ -1,0 +1,9 @@
+package ksmc;
+
+public class M extends test.M {
+	public static void main(String[] args) {
+		M a = new M();
+		a.fu
+	}
+
+}

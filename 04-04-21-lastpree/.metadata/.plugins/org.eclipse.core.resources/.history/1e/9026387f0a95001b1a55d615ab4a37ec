@@ -1,0 +1,20 @@
+package pree;
+
+public class Q5_HarshadNo {
+
+	public static void main(String[] args) {
+		int h = 1412;
+		int temp = h;
+		int sum = 0;
+		while(temp!=0)
+		{
+			int res = temp%10;
+			sum = sum + res;
+			temp = temp/10;
+		}
+		
+		System.out.println(sum);
+
+	}
+
+}

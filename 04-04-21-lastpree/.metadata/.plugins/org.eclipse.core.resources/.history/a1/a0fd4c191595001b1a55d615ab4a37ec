@@ -1,0 +1,9 @@
+package arraylist1;
+
+public class MyArrayList {
+	int def_cap=10;
+	int[] a = new int[def_cap];
+	
+	void add(int i)
+
+}

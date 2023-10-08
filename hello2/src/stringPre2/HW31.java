@@ -1,0 +1,26 @@
+package stringPre2;
+
+public class HW31 {
+
+	public static void main(String[] args) {
+		String s = "abcXYZ";
+		char c[] = s.toCharArray();
+		for (int i = 0; i < c.length; i++) 
+		{
+			if(c[i]>=97 && c[i]<=122)
+			{
+				c[i] = (char) (c[i]-32);
+			}
+		}
+		for (int i = 0; i < c.length; i++) 
+		{
+			c[i]=(char) (155-c[i]);
+		}
+		for (int i = 0; i < c.length; i++) 
+		{
+			System.out.print(c[i]);
+		}
+
+	}
+
+}

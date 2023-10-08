@@ -1,0 +1,7 @@
+package arraylist1;
+
+public class MyArrayList {
+	int def_cap=10;
+	
+
+}

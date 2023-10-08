@@ -1,0 +1,19 @@
+package pree;
+
+public class Q7 {
+
+	public static void main(String[] args) {
+		int[][] a = new int[7][7];
+		int imin=0, jmin=0, imax=a.length-1, jmax=a.length-1;
+		int cnt=4;
+//		
+		
+		for (int i = jmin; i < jmax; i++) 
+		{
+			a[i][imin]=cnt;
+		}
+		}
+
+	}
+
+

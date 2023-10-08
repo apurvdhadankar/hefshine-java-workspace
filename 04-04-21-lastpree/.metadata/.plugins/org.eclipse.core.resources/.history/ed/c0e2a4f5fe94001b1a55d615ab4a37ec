@@ -1,0 +1,14 @@
+package arraylist;
+
+public class MyLindexList<E> {
+	
+	int size=0;
+	Object elemets[];
+	int default_capacity=10;
+	
+	void add(E e)
+	{
+		elements[size++] = e;
+	}
+
+}

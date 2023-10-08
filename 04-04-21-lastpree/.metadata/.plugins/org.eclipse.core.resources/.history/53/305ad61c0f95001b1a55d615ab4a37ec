@@ -1,0 +1,17 @@
+package pree;
+
+public class Q2_parttern {
+	public static void main(String[] args) {
+		for (int i = 0; i < 9; i++) 
+		{
+			for (int j = 0; j < 9; j++) 
+			{
+				if(j>3 && j<5 && i<2)
+				{
+					System.out.println("*");
+				}
+			}
+		}
+	}
+
+}

@@ -1,0 +1,27 @@
+package pree;
+
+public class Q5_HarshadNo {
+
+	public static void main(String[] args) {
+		int h = 1000;
+		int temp = h;
+		int sum = 0;
+		while(temp!=0)
+		{
+			int res = temp%10;
+			sum = sum + res;
+			temp = temp/10;
+		}
+		
+		if(h/sum==0)
+		{
+			System.out.println("Harshad No");
+		}
+		else
+		{
+			System.out.println("Not");
+		}
+
+	}
+
+}
